@@ -12,7 +12,7 @@ import { TasksComponent } from './tasks/tasks.component';
   imports: [
     HeaderComponent,
     UserComponent,
-   TasksComponent
+    TasksComponent, 
   ],
 })
 export class AppComponent {
