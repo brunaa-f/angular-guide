@@ -28,4 +28,8 @@ isAddingTask = false;
   onStartAddTask() {
     this.isAddingTask = true;
   }
+
+  onCancelAddTask() {
+    this.isAddingTask = false
+  }
 }
