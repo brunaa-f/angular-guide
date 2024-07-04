@@ -1,6 +1,9 @@
+import { Injectable } from "@angular/core";
 import { NewTaskData } from "./task/task.model";
 
-class TasksService {
+@Injectable({providedIn: 'root'})
+
+export class TasksService {
     private tasks = [
         { id: 't1', userId: 'u1', title: 'Master angular', summary: 'learn all the basic and advanced features of Angular & how to apply them.', dueDate: '2025-12-31' }
     ]
