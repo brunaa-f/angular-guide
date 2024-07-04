@@ -18,14 +18,10 @@ export class TasksComponent {
  isAddingTask = false;
 
  constructor (private tasksService: TasksService) {
-
  }
 
   get selectedUserTasks() {
     return this.tasksService.getUserTasks(this.userId)
-  }
-
-  onCompleteTask(id: string) {
   }
 
   onStartAddTask() {
