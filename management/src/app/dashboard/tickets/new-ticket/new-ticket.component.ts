@@ -12,14 +12,13 @@ import { ControlComponent } from "../../../shared/control/control.component";
   styleUrl: './new-ticket.component.css',
 })
 export class NewTicketComponent {
-  //@ViewChild('form') form?: ElementRef<HTMLFormElement>;
-  private form = viewChild.required<ElementRef<HTMLFormElement>>('form')
+  @ViewChild('form') form?: ElementRef<HTMLFormElement>;
   onSubmit(title: string, ticketText: string) {
     //console.dir(titleElement)
    // const titleElementTitle = titleElement.value
 
    console.log(title)
    console.log(ticketText)
-   this.form().nativeElement.reset()
+   this.form?.nativeElement.reset()
   }
 }
